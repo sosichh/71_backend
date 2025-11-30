@@ -8,7 +8,7 @@ public class HW1 {
         Thread thread1 = new Thread(() -> {
             long temp = 0;
 
-            for (int i = 1; i <= 5000000; i++){
+            for (long i = 1; i <= 500_000; i++){
                 temp += i;
             }
 
@@ -18,8 +18,8 @@ public class HW1 {
         Thread thread2 = new Thread(() -> {
             long temp = 0;
 
-            for (int i = 5000001; i <= 10000000; i++){
-                temp += 1;
+            for (long i = 500_001; i <= 1_000_000; i++){
+                temp += i;
             }
 
             TwoSums[1] = temp;

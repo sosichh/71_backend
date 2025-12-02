@@ -8,7 +8,7 @@ import java.util.List;
 public class ReaderService {
     private ReaderRepository readerRepository;
 
-    public ReaderService() {
-        readerRepository = new ReaderRepository();
+    public ReaderService(ReaderRepository readerRepository) {
+        this.readerRepository = readerRepository;
     }
 }
